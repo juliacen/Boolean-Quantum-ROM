@@ -2,6 +2,10 @@
 
 This repository contains a Jupyter notebook that constructs a **Boolean Quantum Read-Only Memory (QROM)** using Qiskit. Specifically, we build a circuit that simulates any function that maps an arbitrary sized Boolean string to a 0 or 1. 
 
+**Inputs:** A Python dictionary to define the Boolean function 
+
+**Outputs:** Boolean QROM
+
 ## Introduction
 
 The idea of a QROM is to help us store classical inofrmation/data on quantum computer. The type of QROM built in this notebook is especially advantageous when the data is sparse, meaning that the function f is 1 for only a small fraction of possible inputs. In such cases, the QROM can be implemented with exponentially fewer quantum gates than encoding a full classical truth table. This makes it an efficient approach for representing large, mostly-zero classical datasets inside a quantum algorithm.
